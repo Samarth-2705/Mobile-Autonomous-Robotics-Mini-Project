@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="aruco_platform">
+    <static>false</static>
+
+    <link name="platform_base">
+      <inertial>
+        <mass>50.0</mass>
+        <inertia>
+          <ixx>4.17</ixx><iyy>4.17</iyy><izz>8.33</izz>
+          <ixy>0</ixy><ixz>0</ixz><iyz>0</iyz>
+        </inertia>
+      </inertial>
+
+      <!-- Green platform body -->
+      <visual name="body">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry><box><size>1.0 1.0 0.05</size></box></geometry>
+        <material>
+          <ambient>0.0 0.7 0.1 1</ambient>
+          <diffuse>0.0 0.8 0.2 1</diffuse>
+        </material>
+      </visual>
+
+      <!-- ArUco marker face on top -->
+      <visual name="aruco_marker">
+        <pose>0 0 0.026 0 0 0</pose>
+        <geometry><box><size>0.6 0.6 0.001</size></box></geometry>
+        <material>
+          <script>
+            <uri>model://aruco_platform/marker_material.material</uri>
+            <name>ArUcoMarker</name>
+          </script>
+        </material>
+      </visual>
+
+      <collision name="collision">
+        <geometry><box><size>1.0 1.0 0.05</size></box></geometry>
+        <surface>
+          <contact><ode/></contact>
+          <friction><ode><mu>1</mu><mu2>1</mu2></ode></friction>
+        </surface>
+      </collision>
+    </link>
+
+    <!-- Planar move plugin -->
+    <plugin name="platform_move" filename="libgazebo_ros_planar_move.so">
+      <ros>
+        <namespace>platform</namespace>
+        <remapping>cmd_vel:=cmd_vel</remapping>
+        <remapping>odom:=odom</remapping>
+      </ros>
+      <update_rate>100</update_rate>
+      <publish_rate>20</publish_rate>
+      <publish_odom>true</publish_odom>
+      <publish_odom_tf>true</publish_odom_tf>
+      <odometry_frame>odom</odometry_frame>
+      <robot_base_frame>platform_base</robot_base_frame>
+    </plugin>
+
+  </model>
+</sdf>

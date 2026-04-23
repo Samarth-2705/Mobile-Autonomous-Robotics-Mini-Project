@@ -1,0 +1,6 @@
+[console_scripts]
+aruco_detector = drone_landing.aruco_detector:main
+landing_controller = drone_landing.landing_controller:main
+platform_controller = drone_landing.platform_controller:main
+state_machine = drone_landing.state_machine:main
+

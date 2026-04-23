@@ -1,0 +1,24 @@
+[0.965s] Invoking command in '/home/pes2ug23cs517/drone_ws/src/drone_landing': PYTHONPATH=/home/pes2ug23cs517/drone_ws/build/drone_landing/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pes2ug23cs517/drone_ws/install/drone_landing/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/drone_landing build --build-base /home/pes2ug23cs517/drone_ws/build/drone_landing/build install --record /home/pes2ug23cs517/drone_ws/build/drone_landing/install.log --single-version-externally-managed install_data
+[1.203s] running egg_info
+[1.215s] writing ../../build/drone_landing/drone_landing.egg-info/PKG-INFO
+[1.216s] writing dependency_links to ../../build/drone_landing/drone_landing.egg-info/dependency_links.txt
+[1.216s] writing entry points to ../../build/drone_landing/drone_landing.egg-info/entry_points.txt
+[1.217s] writing requirements to ../../build/drone_landing/drone_landing.egg-info/requires.txt
+[1.217s] writing top-level names to ../../build/drone_landing/drone_landing.egg-info/top_level.txt
+[1.219s] reading manifest file '../../build/drone_landing/drone_landing.egg-info/SOURCES.txt'
+[1.221s] writing manifest file '../../build/drone_landing/drone_landing.egg-info/SOURCES.txt'
+[1.222s] running build
+[1.222s] running build_py
+[1.222s] running install
+[1.223s] running install_lib
+[1.225s] running install_data
+[1.225s] running install_egg_info
+[1.227s] removing '/home/pes2ug23cs517/drone_ws/install/drone_landing/lib/python3.10/site-packages/drone_landing-0.1.0-py3.10.egg-info' (and everything under it)
+[1.227s] Copying ../../build/drone_landing/drone_landing.egg-info to /home/pes2ug23cs517/drone_ws/install/drone_landing/lib/python3.10/site-packages/drone_landing-0.1.0-py3.10.egg-info
+[1.229s] running install_scripts
+[1.254s] Installing aruco_detector script to /home/pes2ug23cs517/drone_ws/install/drone_landing/lib/drone_landing
+[1.255s] Installing landing_controller script to /home/pes2ug23cs517/drone_ws/install/drone_landing/lib/drone_landing
+[1.255s] Installing platform_controller script to /home/pes2ug23cs517/drone_ws/install/drone_landing/lib/drone_landing
+[1.255s] Installing state_machine script to /home/pes2ug23cs517/drone_ws/install/drone_landing/lib/drone_landing
+[1.255s] writing list of installed files to '/home/pes2ug23cs517/drone_ws/build/drone_landing/install.log'
+[1.282s] Invoked command in '/home/pes2ug23cs517/drone_ws/src/drone_landing' returned '0': PYTHONPATH=/home/pes2ug23cs517/drone_ws/build/drone_landing/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pes2ug23cs517/drone_ws/install/drone_landing/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/drone_landing build --build-base /home/pes2ug23cs517/drone_ws/build/drone_landing/build install --record /home/pes2ug23cs517/drone_ws/build/drone_landing/install.log --single-version-externally-managed install_data

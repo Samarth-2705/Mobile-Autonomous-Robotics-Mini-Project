@@ -1,0 +1,41 @@
+[0.000000] (-) TimerEvent: {}
+[0.000242] (drone_landing) JobQueued: {'identifier': 'drone_landing', 'dependencies': OrderedDict()}
+[0.000285] (drone_landing) JobStarted: {'identifier': 'drone_landing'}
+[0.097853] (-) TimerEvent: {}
+[0.198218] (-) TimerEvent: {}
+[0.298738] (-) TimerEvent: {}
+[0.399104] (-) TimerEvent: {}
+[0.499631] (-) TimerEvent: {}
+[0.600164] (-) TimerEvent: {}
+[0.700726] (-) TimerEvent: {}
+[0.801393] (-) TimerEvent: {}
+[0.901972] (-) TimerEvent: {}
+[1.002356] (-) TimerEvent: {}
+[1.091032] (drone_landing) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/pes2ug23cs517/drone_ws/build/drone_landing/build', '--no-deps', 'symlink_data'], 'cwd': '/home/pes2ug23cs517/drone_ws/build/drone_landing', 'env': {'LANGUAGE': 'en_IN:en', 'USER': 'pes2ug23cs517', 'SLAM_PROJECT_DIR': '/home/pes2ug23cs517/slam_project', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/pes2ug23cs517', 'CYCLONEDDS_URI': 'file:///home/pes2ug23cs517/cyclone_config/cyclone.xml', 'OLDPWD': '/home/pes2ug23cs517', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1721', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'pes2ug23cs517', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'pes2ug23cs517', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': '/home/pes2ug23cs517/drone_ws/src/drone_landing/models:', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '1', 'PATH': '/opt/ros/humble/bin:/home/pes2ug23cs517/.local/bin:/home/pes2ug23cs517/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/pes2ug23cs463:@/tmp/.ICE-unix/1537,unix/pes2ug23cs463:/tmp/.ICE-unix/1537', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/788da8ad_27a5_4a3b_aadd_4d64b86aebad', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.L79UN3', 'GNOME_TERMINAL_SERVICE': ':1.315', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '42', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/pes2ug23cs517/drone_ws/build/drone_landing', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/pes2ug23cs517/drone_ws/build/drone_landing/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pes2ug23cs517/drone_ws/install/drone_landing/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[1.102478] (-) TimerEvent: {}
+[1.202982] (-) TimerEvent: {}
+[1.303693] (-) TimerEvent: {}
+[1.375094] (drone_landing) StdoutLine: {'line': b'running develop\n'}
+[1.403984] (-) TimerEvent: {}
+[1.504671] (-) TimerEvent: {}
+[1.581099] (drone_landing) StdoutLine: {'line': b'running egg_info\n'}
+[1.581448] (drone_landing) StdoutLine: {'line': b'writing drone_landing.egg-info/PKG-INFO\n'}
+[1.582371] (drone_landing) StdoutLine: {'line': b'writing dependency_links to drone_landing.egg-info/dependency_links.txt\n'}
+[1.583237] (drone_landing) StdoutLine: {'line': b'writing entry points to drone_landing.egg-info/entry_points.txt\n'}
+[1.583712] (drone_landing) StdoutLine: {'line': b'writing requirements to drone_landing.egg-info/requires.txt\n'}
+[1.583812] (drone_landing) StdoutLine: {'line': b'writing top-level names to drone_landing.egg-info/top_level.txt\n'}
+[1.586876] (drone_landing) StdoutLine: {'line': b"reading manifest file 'drone_landing.egg-info/SOURCES.txt'\n"}
+[1.588297] (drone_landing) StdoutLine: {'line': b"writing manifest file 'drone_landing.egg-info/SOURCES.txt'\n"}
+[1.590011] (drone_landing) StdoutLine: {'line': b'running build_ext\n'}
+[1.590152] (drone_landing) StdoutLine: {'line': b'Creating /home/pes2ug23cs517/drone_ws/install/drone_landing/lib/python3.10/site-packages/drone-landing.egg-link (link to .)\n'}
+[1.591450] (drone_landing) StdoutLine: {'line': b'Installing aruco_detector script to /home/pes2ug23cs517/drone_ws/install/drone_landing/lib/drone_landing\n'}
+[1.591611] (drone_landing) StdoutLine: {'line': b'Installing landing_controller script to /home/pes2ug23cs517/drone_ws/install/drone_landing/lib/drone_landing\n'}
+[1.591954] (drone_landing) StdoutLine: {'line': b'Installing platform_controller script to /home/pes2ug23cs517/drone_ws/install/drone_landing/lib/drone_landing\n'}
+[1.592101] (drone_landing) StdoutLine: {'line': b'Installing state_machine script to /home/pes2ug23cs517/drone_ws/install/drone_landing/lib/drone_landing\n'}
+[1.592176] (drone_landing) StdoutLine: {'line': b'\n'}
+[1.592244] (drone_landing) StdoutLine: {'line': b'Installed /home/pes2ug23cs517/drone_ws/build/drone_landing\n'}
+[1.592312] (drone_landing) StdoutLine: {'line': b'running symlink_data\n'}
+[1.604958] (-) TimerEvent: {}
+[1.633812] (drone_landing) CommandEnded: {'returncode': 0}
+[1.670703] (drone_landing) JobEnded: {'identifier': 'drone_landing', 'rc': 0}
+[1.672887] (-) EventReactorShutdown: {}

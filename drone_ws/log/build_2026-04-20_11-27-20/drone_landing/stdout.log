@@ -1,0 +1,18 @@
+running develop
+running egg_info
+writing drone_landing.egg-info/PKG-INFO
+writing dependency_links to drone_landing.egg-info/dependency_links.txt
+writing entry points to drone_landing.egg-info/entry_points.txt
+writing requirements to drone_landing.egg-info/requires.txt
+writing top-level names to drone_landing.egg-info/top_level.txt
+reading manifest file 'drone_landing.egg-info/SOURCES.txt'
+writing manifest file 'drone_landing.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/pes2ug23cs517/drone_ws/install/drone_landing/lib/python3.10/site-packages/drone-landing.egg-link (link to .)
+Installing aruco_detector script to /home/pes2ug23cs517/drone_ws/install/drone_landing/lib/drone_landing
+Installing landing_controller script to /home/pes2ug23cs517/drone_ws/install/drone_landing/lib/drone_landing
+Installing platform_controller script to /home/pes2ug23cs517/drone_ws/install/drone_landing/lib/drone_landing
+Installing state_machine script to /home/pes2ug23cs517/drone_ws/install/drone_landing/lib/drone_landing
+
+Installed /home/pes2ug23cs517/drone_ws/build/drone_landing
+running symlink_data

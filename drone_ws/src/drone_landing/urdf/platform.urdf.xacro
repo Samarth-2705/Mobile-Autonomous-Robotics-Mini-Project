@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<robot name="landing_platform" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <link name="platform_base">
+    <visual>
+      <geometry><box size="1.0 1.0 0.05"/></geometry>
+      <material name="green"><color rgba="0.0 0.8 0.2 1.0"/></material>
+    </visual>
+    <collision>
+      <geometry><box size="1.0 1.0 0.05"/></geometry>
+    </collision>
+    <inertial>
+      <mass value="50.0"/>
+      <inertia ixx="4.17" iyy="4.17" izz="8.33" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </link>
+
+  <!-- ArUco marker visual (ID 0, 40x40cm) -->
+  <link name="marker_link">
+    <visual>
+      <origin xyz="0 0 0.001"/>
+      <geometry><box size="0.4 0.4 0.001"/></geometry>
+      <material name="aruco"><color rgba="0.1 0.1 0.1 1.0"/></material>
+    </visual>
+    <inertial>
+      <mass value="0.001"/>
+      <inertia ixx="0.000001" iyy="0.000001" izz="0.000001" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </link>
+  <joint name="marker_joint" type="fixed">
+    <parent link="platform_base"/><child link="marker_link"/>
+    <origin xyz="0 0 0.026" rpy="0 0 0"/>
+  </joint>
+
+  <gazebo>
+    <plugin name="platform_move" filename="libgazebo_ros_planar_move.so">
+      <ros>
+        <namespace>platform</namespace>
+        <remapping>cmd_vel:=cmd_vel</remapping>
+        <remapping>odom:=odom</remapping>
+      </ros>
+      <update_rate>100</update_rate>
+      <publish_rate>20</publish_rate>
+      <publish_odom>true</publish_odom>
+      <publish_odom_tf>true</publish_odom_tf>
+      <odometry_frame>odom</odometry_frame>
+      <robot_base_frame>platform_base</robot_base_frame>
+    </plugin>
+  </gazebo>
+
+</robot>
